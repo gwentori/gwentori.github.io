@@ -1,16 +1,11 @@
 ---
 layout: default
 ---
-<main class="content" role="main">
-  <article class="post">
-    <div class="post-meta">
-      <h1 class="post-title">{{ page.title }}</h1>
+<div class="well">
+    {% if page.subtitle %}
+    <h4 class="home-subtitle">{{ page.subtitle }}</h4>
+    {% endif %}
+    <div>
+    	{{ content }}
     </div>
-    <section class="post-content">
-      <a name="topofpage"></a>
-      {{content}}
-    </section>
-  </article>
-</main>
-
-{% include footer.html %}
+</div>
